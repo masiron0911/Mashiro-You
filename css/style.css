@@ -333,3 +333,27 @@ h3::after{
     margin: auto;
     border-bottom: 1px solid #000;
 } 
+
+
+
+/*お問い合わせボタン*/
+
+a.btn--orange {
+    color: #fff;
+    background-color: #eb6100;
+  }
+  
+  a.btn--orange:hover {
+    color: #fff;
+    background: #f56500;
+  }
+  
+  a.btn-c {
+    font-size: 2rem;
+    position: relative;
+    padding: 1.5rem 3rem 1.5rem 2rem;
+  }
+  
+  a.btn-c i.fa {
+    margin-right: 1rem;
+  }
