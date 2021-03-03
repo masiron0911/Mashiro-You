@@ -1,3 +1,7 @@
+@charset "UTF-8";
+@import url("grid.css");
+
+/*ポップアップ用*/
 .modal-wrapper {
     z-index: 999;
     position: fixed;
@@ -76,3 +80,125 @@
   .modal-wrapper .modal-close:hover {
     color: #2b2e38!important
   }
+
+  
+  
+  
+  
+  
+  /*タブ*/
+
+input[name="switch"] {
+	display: none;
+}
+
+/* :::::: button :::::: */
+.tabBtn {
+	display: flex;
+	list-style: none;
+	width: 100%;
+	margin: 0 0 1px;
+	padding: 0;
+	text-align: center;
+}
+.tabBtn li {
+	flex-basis: 20%;
+	background: rgb(32, 178, 64);
+}
+.tabBtn li:not(:last-child) {
+	border-right: 1px solid white;
+}
+.tabBtn label {
+	display: block;
+	cursor: pointer;
+	padding: 10px 0;
+	color: white;
+	transition: background .3s;
+}
+.tabBtn label:hover {
+	background: rgba(205,92,92,.5);
+}
+
+/* :::::: contents :::::: */
+.tabContents section {
+	padding: 20px;
+	background: white;
+}
+.tabContents h2 {
+	margin: 0 0 .5em;
+	font-size: 18px;
+}
+.tabContents p {
+	font-size: 12px;
+}
+.tabContents p a {
+	color:  rgb(32, 178, 64);
+}
+.tabContents figure {
+	float: left;
+	width: 30%;
+	min-width: 120px;
+	margin: 0 1em 0 0;
+}
+.tabContents figure img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+.tabContents section::after {
+	content: "";
+	display: block;
+	clear: left;
+}
+
+/* :::::: mechanism :::::: */
+.tabContents section {
+	opacity: .1;
+}
+.tabContents section {
+	transition: opacity .3s;
+}
+#tab-1:checked ~ .tabBtn label[for="tab-1"],
+#tab-2:checked ~ .tabBtn label[for="tab-2"],
+#tab-3:checked ~ .tabBtn label[for="tab-3"],
+#tab-4:checked ~ .tabBtn label[for="tab-4"],
+#tab-5:checked ~ .tabBtn label[for="tab-5"] {
+	background: indianred;
+}
+#tab-1:checked ~ .tabContents #section-1,
+#tab-2:checked ~ .tabContents #section-2,
+#tab-3:checked ~ .tabContents #section-3,
+#tab-4:checked ~ .tabContents #section-4,
+#tab-5:checked ~ .tabContents #section-5 {
+	opacity: 1;
+	background: white;
+}
+
+/* :::::: slide :::::: */
+body {
+	overflow: hidden;
+}
+.tabContents {
+	display: flex;
+	width: 500%;
+	transition: transform .6s;
+}
+.tabContents section {
+	flex-basis: 20%;
+	opacity: .1;
+	transition: opacity .3s;
+}
+#tab-1:checked ~ .tabContents {
+	transform: translateX(0);
+}
+#tab-2:checked ~ .tabContents {
+	transform: translateX(-20%);
+}
+#tab-3:checked ~ .tabContents {
+	transform: translateX(-40%);
+}
+#tab-4:checked ~ .tabContents {
+	transform: translateX(-60%);
+}
+#tab-5:checked ~ .tabContents {
+	transform: translateX(-80%);
+}
