@@ -396,10 +396,19 @@ h4 {
  }
 
  /*ニュースカード*/
-.card {
+ @media screen and (min-width: 481px) {
+ .card {
   margin-top: 5rem;
   margin-left: 10rem;
   margin-right: 10rem;
+}}
+
+@media screen and (max-width: 480px) {
+.card {
+	margin-top: 1rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+  }
 }
 
  .cp_card04 {
