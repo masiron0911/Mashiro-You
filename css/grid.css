@@ -50,8 +50,8 @@ body {
     width: 100%;
 }
 
-/* 768px以上の表示 
-@media ( min-width : 768px ) {*/
+/* 768px以上の表示 */
+@media ( min-width : 768px ) {
 .row {
     display: flex;
     flex-direction: row;
@@ -388,12 +388,8 @@ ul {
     border-width: 0;
     border-top: 1px solid #ccc; 
   }
-  
-
-
-
-
- /*ボタン*/
+}
+ /*ボタン––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 *,
 *:before,

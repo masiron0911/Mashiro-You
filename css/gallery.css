@@ -284,20 +284,20 @@ body {
 .colour-block {
   background:#B1C664;
   width:100%;
-  padding:7% 20% 10% 20%;
+  padding:7% 10% 10% 10%;
   color:rgb(53, 53, 53);
 }
 .white-block {
   background:#fff;
   width:100%;
-  padding:7% 20% 10% 20%;
+  padding:7% 10% 10% 10%;
   color:#444444;
 }
 
 .pink-block {
   background:rgb(255, 233, 233);
   width:100%;
-  padding:7% 20% 10% 20%;
+  padding:7% 10% 10% 10%;
   color:#444444;
 }
 
@@ -340,7 +340,20 @@ h4 {
    margin: 30px;
    text-align: center;
    font-family: 'メイリオ';
+   margin-left:10rem;
+   margin-right:10rem;
  }
+
+ @media screen and (max-width: 768px){
+h4 {
+	position: relative;
+	 margin: 30px;
+	 text-align: center;
+	 font-family: 'メイリオ';
+	 margin-left:4rem;
+	 margin-right:4rem;
+   }
+  }
  
  h4:before,
  h4:after {
