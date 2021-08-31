@@ -431,7 +431,7 @@ header #logo img {
 /*トップページのロゴ画像への追加指定*/
 .home header #logo img {
 	width: 30%;	/*画像の幅*/
-	right: 65%;	/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
+	right: 10%;	/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
 	top: 3px;	/*ロゴやメニューが入っているブロックに対して、上からの配置場所の指定。*/
 }
 
@@ -481,31 +481,6 @@ ol {
 
 }
 
-/* 絶対位置指定用 */
-.header-right {
-    position: absolute;/* 絶対位置指定 */
-    top: 15px;/* 上からの位置調整して下さい */
-    right: 1%;/* 右からの位置調整して下さい */
-}
-/* SNSフォローボタン */
-.sns-link-btn {
-    display: -webkit-flex; /* Safari */
-    display: flex;
-    list-style-type: none;
-}
-.sns-link-btn li {
-    margin-right: 10px;
-}
-.sns-link-btn li a {
-    display: block;
-    margin: 0;
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50%;
-    text-align: center;
-}
 
 /* スマートフォン */
 @media screen and (max-width: 767px) {
@@ -519,4 +494,78 @@ ol {
     height: 30px;
     line-height: 30px;
 }
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+
+body {
+	/*設置する親要素ページ全体ならbodyなど*/
+	position: relative;
+	height: 10vh;
+	margin: 0;
+	padding: 0;
+}
+.contents {
+	/*サンプルはfixedの確認のためにheight指定しています。*/
+	height: 200px;
+}
+.cp_snslink03 {
+	z-index: 99;
+	position: fixed;
+	top: 50%;
+	right: 0;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0 0 0 5px;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+.cp_snslink03 .cp_link_list {
+	width: 150px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.cp_snslink03 .cp_link_list img{
+	width: 30px;
+	margin-right: 1rem;
+	padding: 0;
+	list-style: none;
+}
+.cp_snslink03 .cp_link_list .cp_link {
+	position: relative;
+	right: -100px;
+	margin: 10px 0;
+	padding: 5px;
+	cursor: pointer;
+	-webkit-transition: right 0.6s ease-in-out;
+	        transition: right 0.6s ease-in-out;
+	text-align: left;
+	background: #83ddd1;
+	border: 1px dashed #ffffff;
+	border-right: none;
+	-webkit-box-shadow: 0px 0px 0px 3px  #83ddd1;
+	box-shadow: 0px 0px 0px 3px  #83ddd1;
+}
+.cp_snslink03 .cp_link_list .cp_link i {
+	margin-right: 10px;
+}
+.cp_snslink03 .cp_link_list .cp_link:hover {
+	right: 0;
+	background: #00bcd4;
+	-webkit-box-shadow: 0px 0px 0px 3px #00bcd4;
+	box-shadow: 0px 0px 0px 3px #00bcd4;
+}
+.cp_snslink03 .cp_link_list .cp_link a {
+	text-decoration: none;
+	color: #585858;
+}
+.cp_snslink03 .cp_link_list .cp_link:hover a {
+	color: #ffffff;
 }
