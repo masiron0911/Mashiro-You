@@ -75,33 +75,122 @@ header #logo img {
 }
 
 /*メニュー
----------------------------------------------------------------------------*/
-/*メニューブロック全体への指定*/
+/*メニューブロック全体への指定
 #menubar {
 	line-height: 2;
 	text-align: center;
-	font-size: 18px;	/*文字サイズ*/	
+	font-size: 18px;	
 }
-/*メニュー１個あたりの指定*/
+/*メニュー１個あたりの指定
 #menubar li {
-	display: inline-block;	/*横並びにする指定*/
-	margin: 0px 5px;			/*上下、左右へのメニューの外側にとる余白*/
+	display: inline-block;	/*横並びにする指定
+	margin: 0px 5px;			/*上下、左右へのメニューの外側にとる余白
 }
 #menubar li a {
 	text-decoration: none;display: block;
-	padding: 0px 20px;	/*上下、左右へのメニューの内側にとる余白*/
+	padding: 0px 20px;	/*上下、左右へのメニューの内側にとる余白
 }
-/*現在表示中(current)と、マウスオン時の指定*/
+/*現在表示中(current)と、マウスオン時の指定
 #menubar li.current a, #menubar li a:hover {
-	background: #fff;	/*背景色*/
-	color: #ffbbbb;			/*文字色*/
-	border-radius: 100px;	/*角丸のサイズ。大きめであれば適当で構いません。この１行を削除すると、長方形になります。*/
+	background: #fff;	/*背景
+	color: #ffbbbb;			/*文字色
+	border-radius: 100px;	/*角丸のサイズ。大きめであれば適当で構いません。この１行を削除すると、長方形になります。
+}
+-----------------*/
+
+/*newメニュー
+---------------------------------------------------------------------------*/
+.cp_navi {
+	z-index: 100;
+	background-color: #ffffff;
+	border: 1px solid #dedede;
+	border-radius: 4px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	color: #888888;
+	display: block;
+	margin:0 auto;
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+}
+.cp_navi ul {
+	margin: 0;
+	padding: 0;
+}
+.cp_navi ul li {
+	display: inline-block;
+	list-style-type: none;
+	-webkit-transition: all 0.2s;
+	        transition: all 0.2s;
+}
+.cp_navi > ul > li > a > .caret {
+	border-top: 4px solid #aaaaaa;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: '';
+	display: inline-block;
+	height: 0;
+	width: 0;
+	vertical-align: middle;
+	-webkit-transition: color 0.1s linear;
+	        transition: color 0.1s linear;
+}
+.cp_navi > ul > li > a {
+	color: #aaaaaa;
+	display: block;
+	line-height: 30px;
+	padding: 0 10px;
+	text-decoration: none;
+}
+.cp_navi > ul > li:hover {
+	background-color: #83ddd1;
+}
+
+.cp_navi > ul > li:hover > a {
+	color: rgb( 255, 255, 255 );
+}
+.cp_navi > ul > li:hover > a > .caret {
+	border-top-color: rgb( 255, 255, 255 );
+}
+.cp_navi > ul > li > div {
+	background-color: #83ddd1;
+	border-top: 0;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	display: none;
+	margin: 0;
+	opacity: 0;
+	position: absolute;
+	width: 10rem;
+	visibility: hidden;
+	-webkit-transiton: opacity 0.2s;
+	       transition: opacity 0.2s;
+}
+
+.cp_navi > ul > li:hover > div {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+.cp_navi > ul > li > div ul > li {
+	display: block;
+	line-height: 1.5;
+}
+.cp_navi > ul > li > div ul > li > a {
+	color: #ffffff;
+	display: block;
+	padding: px 6px;
+	text-decoration: none;
+}
+.cp_navi > ul > li > div ul > li:hover > a {
+	background-color: rgba( 255, 255, 255, 0.1);
 }
 
 /*コンテンツ（ヘッダーとフッター以外を囲むブロック）
 ---------------------------------------------------------------------------*/
 #contents {
 	overflow: hidden;
+	z-index: 1;
 	padding: 50px 3%;	/*上下、左右へのブロック内の余白*/
 }
 /*コンテンツ内にあるh2(見出し)タグの指定*/
@@ -237,7 +326,8 @@ footer .pr {display: block;}
 /*box1指定（角丸のボックス）
 ---------------------------------------------------------------------------*/
 .box1 {
-	overflow: hidden;position: relative;
+	overflow: hidden;
+	position: relative;
 	padding: 20px 40px;		/*上下、左右へのボックス内の余白*/
 	border-radius: 30px;	/*角丸のサイズ。この１行を削除すると、通常の長方形になります。*/
 	margin-bottom: 30px;	/*下に空けるスペース*/
