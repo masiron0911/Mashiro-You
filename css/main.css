@@ -1,3 +1,9 @@
+body {
+  width: 65vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container-row {
   display: flex;
   flex-direction: row;
@@ -8,13 +14,59 @@
   align-items: center;
 }
 
-.item {
-  /* align-self: center; */
+#sidebar {
+  /* align-self: flex-start; */
+  margin: 5px;
+}
+#main-contents {
+  width: 100%;
+  margin: 5px;
 }
 
-#sidebar {
-  align-self: flex-start;
+#egara .title {
+  text-align: center;
 }
+
+#egara .title img {
+  width: 60%;
+}
+
+#egara .item img {
+  width: 100%;
+}
+
+#greeting img {
+  width: 100%;
+}
+
+#top-image .pc {
+  width: 100%;
+  display: block !important;
+}
+
+#top-image .sp {
+  width: 100%;
+  display: none !important;
+}
+
+@media only screen and (max-width: 750px) {
+  .pc {
+    display: none !important;
+  }
+  .sp {
+    display: block !important;
+  }
+}
+
 #latest-works {
+  width: 100%;
+}
+
+#latest-works img {
+  width: 50%;
+}
+
+#latest-works .works-contents {
+  width: 100%;
   align-self: flex-start;
 }
