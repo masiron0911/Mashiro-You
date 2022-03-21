@@ -1,0 +1,12 @@
+#navbar {
+  /* align-self: flex-start; */
+  margin: 5px;
+}
+
+#navbar .logo {
+  margin: 3px;
+}
+
+#navbar .logo img {
+  width: 100%;
+}
