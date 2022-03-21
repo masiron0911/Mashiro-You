@@ -1,7 +1,12 @@
 body {
-  width: 65vw;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* ページ全体のレイアウト */
+#page {
+  max-width: 1230px;
+  margin: 30px auto;
 }
 
 .container-row {
@@ -14,24 +19,20 @@ body {
   align-items: center;
 }
 
-#sidebar {
-  /* align-self: flex-start; */
-  margin: 5px;
-}
 #main-contents {
   width: 100%;
   margin: 5px;
 }
 
-#egara .title {
+.egara .title {
   text-align: center;
 }
 
-#egara .title img {
+.egara .title img {
   width: 60%;
 }
 
-#egara .item img {
+.egara .item img {
   width: 100%;
 }
 
