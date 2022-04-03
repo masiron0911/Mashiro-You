@@ -1,6 +1,7 @@
 #navbar {
   /* align-self: flex-start; */
   margin: 5px;
+  width: 180px;
 }
 
 #navbar .logo {
@@ -10,3 +11,33 @@
 #navbar .logo img {
   width: 100%;
 }
+
+#navbar nav {
+  width: 100%;
+}
+
+#navbar ul {
+  padding: 0;
+  /* margin: 0; */
+}
+
+#navbar li {
+  list-style: none;
+  border: solid 1.5px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+#navbar li a {
+  text-decoration: none;
+}
+
+#navbar .menu-item {
+  margin: 5px;
+}
+
+#navbar .menu-item:hover {
+  color: #ff99ff;
+}
+
