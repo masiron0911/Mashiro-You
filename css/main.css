@@ -18,6 +18,11 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  gap: 1rem;
+}
 
 #main-contents {
   width: 100%;
@@ -70,4 +75,8 @@ body {
 #latest-works .works-contents {
   width: 100%;
   align-self: flex-start;
+}
+
+#illusts {
+  width: 80%;
 }
