@@ -4,6 +4,10 @@
   width: 180px;
 }
 
+#navbar img {
+  -webkit-user-drag: none;
+}
+
 #navbar .logo {
   margin: 3px;
 }
@@ -41,3 +45,6 @@
   color: #ff99ff;
 }
 
+#navbar .menu-item img {
+  width: 100%;
+}
