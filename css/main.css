@@ -27,6 +27,12 @@ body {
 #main-contents {
   width: 100%;
   margin: 5px;
+  gap: 100px 0px;
+}
+
+#main-contents .contents-index a{
+  margin: 7px;
+  font-size: 19px;
 }
 
 .egara .title {
