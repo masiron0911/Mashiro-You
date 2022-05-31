@@ -32,24 +32,24 @@
   -webkit-transition: right 0.6s ease-in-out;
   transition: right 0.6s ease-in-out;
   text-align: left;
-  background: #83ddd1;
+  background: #d3d359;
   border: 1px dashed #ffffff;
   border-right: none;
-  -webkit-box-shadow: 0px 0px 0px 3px #83ddd1;
-  box-shadow: 0px 0px 0px 3px #83ddd1;
+  -webkit-box-shadow: 0px 0px 0px 3px #d3d359;
+  box-shadow: 0px 0px 0px 3px #d3d359;
 }
 #sns-link ul li i {
   margin-right: 10px;
 }
 #sns-link ul li:hover {
   right: 0;
-  background: #00bcd4;
-  -webkit-box-shadow: 0px 0px 0px 3px #00bcd4;
-  box-shadow: 0px 0px 0px 3px #00bcd4;
+  background: #f3a7ac;
+  -webkit-box-shadow: 0px 0px 0px 3px #f3a7ac;
+  box-shadow: 0px 0px 0px 3px #f3a7ac;
 }
 #sns-link ul li a {
   text-decoration: none;
-  color: #585858;
+  color: #7c6c63;
 }
 #sns-link ul li:hover a {
   color: #ffffff;
