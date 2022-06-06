@@ -1,0 +1,280 @@
+body {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'メイリオ', Meiryo,'Meiryo UI','Verdana','ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','TsukuARdGothic-Regular','Hannotate SC','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+
+/* ページ全体のレイアウト */
+#page {
+  max-width: 1230px;
+  margin: 30px auto;
+}
+
+.container-row {
+  display: flex;
+  flex-direction: row;
+}
+.container-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-column a{
+margin-bottom: 0.5rem;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  gap: 1rem;
+}
+
+#main-contents {
+  width: 100%;
+  margin: 5px 5px 5px 50px;
+  gap: 100px 0px;
+}
+
+/*
+#main-contents .contents-index a{
+  margin: 7px;
+  font-size: 19px;
+}
+*/
+
+.egara .title {
+  text-align: center;
+}
+
+.egara .title img {
+  width: 60%;
+}
+
+.egara .item img {
+  width: 100%;
+}
+
+#greeting img {
+  width: 100%;
+}
+
+#top-image .pc {
+  width: 100%;
+  display: block !important;
+}
+
+#top-image .sp {
+  width: 100%;
+  display: none !important;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 15%;
+}
+
+.menu img{
+ width: 80%;
+ margin-bottom: 0.3rem;
+}
+
+li{
+  list-style:none;
+  margin-left:-2rem
+}
+
+.logo {
+  margin-bottom: 3rem !important;;
+}
+
+
+@media only screen and (max-width: 750px) {
+  .pc {
+    display: none !important;
+  }
+  .sp {
+    display: block !important;
+  }
+}
+
+#latest-works {
+  width: 100%;
+}
+
+#latest-works img {
+  width: 50%;
+}
+
+#latest-works .works-contents {
+  width: 100%;
+  align-self: flex-start;
+}
+
+#illusts {
+  width: 100%;
+}
+
+.colour-block a{
+ text-decoration: none;
+ color: #fff;
+}
+
+
+
+.colour-block {
+  background:#f3a7ac;
+  width:60%;
+  padding:1% 20% 1% 20%;
+  color:#fff;
+  text-align: center;
+}
+
+
+
+/*----------------*/
+/*  SCALLOP down  */
+/*----------------*/
+.scallop-down{
+  transform: translateX(0px) translateY(-6px);
+  height:100px;
+  width:100%;
+  background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(#f3a7ac), color-stop(0.49, #f3a7ac), color-stop(0.51, #fff), to(white));
+-webkit-background-size: 39px 100%;
+}
+
+
+/*ページ付け*/
+
+/* その3  */
+.pager .pagination {
+  text-align: center;
+}
+
+.pager .pagination li {
+  display: inline;
+  margin: 0 2px;
+  padding: 0;
+  display: inline-block;
+  background: #7c6c63;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  position: relative;
+  border-radius: 50px;
+}
+
+
+.pager .pagination li a{
+  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display:table;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+
+.pager .pagination li a span{
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.pager .pagination li a:hover,
+.pager .pagination li a.active{
+  color: #000;
+  background: #b79e90;;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 767px){
+  .pager .pagination li{
+    display: none;
+  }
+
+  .pager .pagination li.pre,
+  .pager .pagination li.next{
+    display: inline-block;
+    width: 40%;
+    height: 50px;
+    text-align: center;
+  }
+
+  .pager .pagination li.pre a,
+  .pager .pagination li.next a{
+    width: 100%;
+    text-align: center;
+  }
+
+  .pager .pagination li.pre span::after{
+    content: "　前の10件へ";
+  }
+
+  .pager .pagination li.next span::before{
+    content: "次の10件へ　";
+  }
+
+}
+
+
+.pickup {
+  display: block;
+  text-align: center; 
+  width: 80%;
+}
+
+footer {
+  text-decoration: none;
+  color: #f3a7ac;
+}
+
+footer a{
+  text-decoration: none;
+  color: #f3a7ac;
+}
+
+.profile {
+ margin-top: 20px;
+ width: 100%;
+}
+
+.profile img{
+  align-items: center;
+}
+
+.profile a{
+  line-height: 2rem;
+}
+
+.profile li{
+  margin-top: 1rem;
+  margin-left: 10px;
+}
+
+.profile-img {
+ margin: 10px;
+ width: 70%;
+}
+
+.profile-items {
+ margin-top: 50px;
+}
+
+.profile-items a{
+  text-decoration: none;
+  color: #000;
+ }
+ /*ホバー時に透明度50%*/
+.profile-items a:hover {
+  opacity: 0.5;
+}
