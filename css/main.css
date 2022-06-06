@@ -198,6 +198,16 @@ li{
 }
 
 @media only screen and (max-width: 767px){
+
+  body {
+    zoom:70% !important;    
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+  }
+
   .pager .pagination li{
     display: none;
   }
