@@ -455,7 +455,7 @@ input[type="checkbox"]#trigger:checked ~ .button::before{
   content: "閉じる";
 }
 
-/*カラム細かいver*/
+/*カラム4行ver*/
 .cs1 {
   display: -webkit-box;
   display: flex;
@@ -542,6 +542,9 @@ input[type="checkbox"]#trigger:checked ~ .button::before{
   }
 }
 
+
+
+
 /*ボタン*/
 .border_btn01 {
   z-index: 999;
@@ -566,4 +569,123 @@ input[type="checkbox"]#trigger:checked ~ .button::before{
 .border_btn01:hover {
   color: #fff; /* 文字色 */
   background: #ffa77b; /* 背景色 */
+}
+
+/*メニューバー*/
+ul.menu-list {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em auto;
+  -webkit-box-pack: center;
+          justify-content: center;
+  max-width: 600px;
+}
+
+ul.menu-list li {
+  margin-top: 1em;
+}
+
+ul.menu-list li a {
+  /*font-size: 20px;
+  border: 2px solid #fa934f;
+  background: #fa934f;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+*/
+
+display: inline-block;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background: #fa934f;
+text-align: center;
+line-height: 1.5em;
+padding-top: 40px;
+color: #ffffff;
+}
+
+ul.menu-list li a:hover {
+  background: #ffffff;
+  color: #fa934f;
+}
+
+ul.menu-list li a.WORKS {
+  background: #f48181;
+  color: #ffffff;
+  border: 2px solid #f48181;
+}
+
+ul.menu-list li a.WORKS:hover {
+  background: #ffffff;
+  color: #f48181;
+}
+
+ul.menu-list li a.GOODS {
+  background: #f1d66a;
+  color: #ffffff;
+  border: 2px solid #f1d66a;
+}
+
+ul.menu-list li a.GOODS:hover {
+  background: #ffffff;
+  color: #f1d66a;
+}
+
+ul.menu-list li a.CALENDAR {
+  background: #88d169;
+  color: #ffffff;
+  border: 2px solid #88d169;
+}
+
+ul.menu-list li a.CALENDAR:hover {
+  background: #ffffff;
+  color: #88d169;
+}
+
+ul.menu-list li a.ABOUT {
+  background: #69cfd1;
+  color: #ffffff;
+  border: 2px solid #69cfd1;
+}
+
+ul.menu-list li a.ABOUT:hover {
+  background: #ffffff;
+  color: #69cfd1;
+}
+
+
+
+ul.menu-list li:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+/*ページ内遷移場所調整*/
+a.anchor{
+  display: block;
+  padding-top: 30px;
+  margin-top: -30px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#topButton {
+  border-radius: 50%;
+  position: fixed;
+  bottom: -35px;
+  right: 10px;
+  padding: 10px 10px;
+  background-color: #f26e6e;
+  color: #fff;
+  text-decoration: none;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+
+#topButton:hover {
+  background-color: #f26e6e;
 }
